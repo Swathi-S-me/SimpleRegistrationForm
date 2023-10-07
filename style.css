@@ -1,0 +1,81 @@
+body {
+    background: url("bgd.jpeg");
+    background-size: cover;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#form {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1); /* Glassy transparent background */
+    backdrop-filter: blur(10px); /* Adds a blur effect */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+h2 {
+    text-align: center;
+    color: #cc9aff; /* Vivid Red-Orange text color */
+    font-size: 30px; /* Increase text size */
+}
+
+#form button {
+    background-color: #3498db; /* Bright Blue button background color */
+    text-decoration: double;
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px; /* Increase padding for the button */
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+#form button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.inputgroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.inputgroup label {
+    color: #c3ec92; /* Dark Gray label text color */
+    font-size: 25px; /* Increase label text size */
+}
+
+.inputgroup input {
+    border: 1px solid #7d7d7d; /* Light Gray border */
+    border-radius: 5px;
+    font-size: 20px; /* Increase input text size */
+    padding: 12px; /* Increase padding for the input */
+    background-color: rgba(233, 233, 233, 0.377); /* Slightly opaque white input background */
+}
+
+.inputgroup input:focus {
+    outline: none;
+    border-color: #3498db; /* Bright Blue border on focus */
+    background-color: #fff6f69a; /* White background on focus */
+}
+
+.inputgroup .error {
+    font-size: 14px;
+    color: #e74c3c; /* Tomato Red error text color */
+}
+
+.inputgroup .success input {
+    border-color: #2ecc71; /* Emerald Green border for success */
+}
+
+.inputgroup .error input {
+    border-color: #e74c3c; /* Tomato Red border for error */
+}
